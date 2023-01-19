@@ -14,12 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: DissecTLS
-email: tba@dissectls.com
+email: sosnowski@net.in.tum.de
 description: >- # this means to ignore newlines until "baseurl:"
   A Scalable Active Scanner for TLS Server Configurations, Capabilities, and TLS Fingerprinting
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pam2023-51-dissectls.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  pam2023-51-dissectls
+url: "https://dissectls.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  syncall
 
 # Build settings
 markdown: kramdown
