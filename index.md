@@ -31,7 +31,8 @@ Similar to related work, the fingerprinting achieved a maximum precision of 99% 
 
 ## Experiment Setup and Scanner Software
 
-For the paper we have used the open-source [TUM Goscanner](https://github.com/tumi8/goscanner) for our Internet measurements. We extended it with the DissecTLS functionality and [JARM](https://github.com/salesforce/jarm) fingerprinting. The scammer os open-sourced in the official repository.
+For the paper we have used the open-source [TUM Goscanner](https://github.com/tumi8/goscanner) for our Internet measurements. We extended it with the DissecTLS functionality and [JARM](https://github.com/salesforce/jarm) fingerprinting.
+The scammer is open-sourced in the official [repository](https://github.com/tumi8/goscanner).
 
 The experiment setup used to compare the TLS scanner and fingerprinting tools can be found under: [experiment-setup](https://github.com/dissectls/experiment-setup)
 
