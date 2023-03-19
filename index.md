@@ -12,9 +12,7 @@ The paper was published at the at the [PAM 2023](https://pam2023.networks.imdea.
 
 ## Paper
 
-**Abstract** 
-
-Collecting metadata from TLS servers on a large scale allows to draw conclusions about their capabilities and configuration.
+**Abstract** Collecting metadata from TLS servers on a large scale allows to draw conclusions about their capabilities and configuration.
 This provides not only insights into the Internet but it enables use cases like detecting malicious C&C servers.
 However, active scanners can only observe and interpret the behavior of TLS servers, the underlying configuration and implementation causing the behavior remains hidden.
 Existing approaches struggle between resource intensive scans that can reconstruct this data and light-weight fingerprinting approaches that aim to differentiate servers without making any assumptions about their inner working.
@@ -24,9 +22,31 @@ We provide a comparison of five active TLS scanning and fingerprinting approache
 We conducted a measurement study over nine weeks to fingerprint C&C servers and analyzed popular and deprecated TLS parameter usage.
 Similar to related work, the fingerprinting achieved a maximum precision of 99% for a conservative detection threshold of 100%; and at the same time, we improved the recall by a factor of 2.8.
 
-**Paper** Read the final version of our paper at the **[[PAM 2023]](https://pam2023.networks.imdea.org/)**
+**Paper** Read the final version of our paper at Springer **[[ONLINE]](https://link.springer.com/chapter/10.1007/978-3-031-28486-1_6)**
 
 **Authors** [Markus Sosnowski](https://net.in.tum.de/~sosnowski), [Johannes Zirngibl](https://net.in.tum.de/~zirngibl), [Patrick Sattler](https://net.in.tum.de/~sattler), and [Georg Carle](https://net.in.tum.de/~carle)
+
+## Data
+
+We provide an extended [ranking]({{ site.baseurl }}{% link pages/ranking.md %}) of TLS patameters as introduces in the paper.
+
+## Referencing our Work
+
+If you are referring to our work or use the collected data in your publication, please refer to it with the following reference [[bib]]({{ site.baseurl }}{% link assets/dissectls.bib %})::
+
+```bib
+{% raw %}@inproceedings{10.1007/978-3-031-28486-1_6,
+  author = {Sosnowski, Markus and Zirngibl, Johannes and Sattler, Patrick and Carle, Georg},
+  editor = {Brunstrom, Anna and Flores, Marcel and Fiore, Marco},
+  title = {{DissecTLS: A Scalable Active Scanner for TLS Server Configurations, Capabilities, and TLS Fingerprinting}},
+  booktitle = {Proc. Passive and Active Measurement (PAM)},
+  year = {2023},
+  publisher = {Springer Nature Switzerland},
+  pages = {110--126},
+  isbn = {978-3-031-28486-1},
+  doi = {10.1007/978-3-031-28486-1_6},
+}{% endraw %}
+```
 
 
 ## Experiment Setup and Scanner Software
@@ -36,9 +56,6 @@ The scammer is open-sourced in the official [repository](https://github.com/tumi
 
 The experiment setup used to compare the TLS scanner and fingerprinting tools can be found under: [experiment-setup](https://github.com/dissectls/experiment-setup)
 
-## Data
-
-We provide a [ranking]({{ site.baseurl }}{% link pages/ranking.md %}) of TLS patameters extending the ones frome the paper.
 
 ## Reproducibility
 
