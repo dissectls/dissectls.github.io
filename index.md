@@ -22,7 +22,7 @@ We provide a comparison of five active TLS scanning and fingerprinting approache
 We conducted a measurement study over nine weeks to fingerprint C&C servers and analyzed popular and deprecated TLS parameter usage.
 Similar to related work, the fingerprinting achieved a maximum precision of 99% for a conservative detection threshold of 100%; and at the same time, we improved the recall by a factor of 2.8.
 
-**Paper** Read the final version of our paper at Springer **[[ONLINE]](https://link.springer.com/chapter/10.1007/978-3-031-28486-1_6)**
+**Paper** Read the final version of our paper at Springer **[[PDF]](https://link.springer.com/content/pdf/10.1007/978-3-031-28486-1_6.pdf)** **[[ONLINE]](https://link.springer.com/chapter/10.1007/978-3-031-28486-1_6)**
 
 **Authors** [Markus Sosnowski](https://net.in.tum.de/~sosnowski), [Johannes Zirngibl](https://net.in.tum.de/~zirngibl), [Patrick Sattler](https://net.in.tum.de/~sattler), and [Georg Carle](https://net.in.tum.de/~carle)
 
