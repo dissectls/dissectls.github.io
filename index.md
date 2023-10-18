@@ -15,7 +15,7 @@ The paper was published at the [PAM 2023](https://pam2023.networks.imdea.org/)
 **Abstract** Collecting metadata from TLS servers on a large scale allows to draw conclusions about their capabilities and configurations.
 This provides not only insights into the Internet but it enables use cases like detecting malicious C&C servers.
 However, active scanners can only observe and interpret the behavior of TLS servers, the underlying configuration and implementation causing the behavior remains hidden.
-Existing approaches struggle between resource intensive scans that can reconstruct this data and light-weight fingerprinting approaches that aim to differentiate servers without making any assumptions about their inner workings.
+Existing approaches struggle between resource intensive scans that can reconstruct this data and lightweight fingerprinting approaches that aim to differentiate servers without making any assumptions about their inner workings.
 With this work we propose DissecTLS, an active TLS scanner that is both lightweight enough to be used for Internet measurements, and able to reconstruct the configuration and capabilities of the TLS stack.
 This was achieved by modeling the parameters of the TLS stack and derive an active scan that dynamically creates scanning probes based on the model and the previous responses from the server.
 We provide a comparison of five active TLS scanning and fingerprinting approaches in a local testbed and on toplist targets. 
