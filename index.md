@@ -6,17 +6,17 @@ layout: home
 ---
 
 
-Additional material for the publication *DissecTLS: A Scalable Active Scanner for TLS Server Configurations, Capabilities, and TLS Fingerprinting* and acces to measruemnt data and code.
+Additional material for the publication *DissecTLS: A Scalable Active Scanner for TLS Server Configurations, Capabilities, and TLS Fingerprinting* and access to measurement data and code.
 
-The paper was published at the at the [PAM 2023](https://pam2023.networks.imdea.org/) 
+The paper was published at the [PAM 2023](https://pam2023.networks.imdea.org/) 
 
 ## Paper
 
-**Abstract** Collecting metadata from TLS servers on a large scale allows to draw conclusions about their capabilities and configuration.
+**Abstract** Collecting metadata from TLS servers on a large scale allows to draw conclusions about their capabilities and configurations.
 This provides not only insights into the Internet but it enables use cases like detecting malicious C&C servers.
 However, active scanners can only observe and interpret the behavior of TLS servers, the underlying configuration and implementation causing the behavior remains hidden.
-Existing approaches struggle between resource intensive scans that can reconstruct this data and light-weight fingerprinting approaches that aim to differentiate servers without making any assumptions about their inner working.
-With this work we propose DissecTLS, an active TLS scanner that is both light-weight enough to be used for Internet measurements and able to reconstruct the configuration and capabilities of the TLS stack.
+Existing approaches struggle between resource intensive scans that can reconstruct this data and lightweight fingerprinting approaches that aim to differentiate servers without making any assumptions about their inner workings.
+With this work we propose DissecTLS, an active TLS scanner that is both lightweight enough to be used for Internet measurements, and able to reconstruct the configuration and capabilities of the TLS stack.
 This was achieved by modeling the parameters of the TLS stack and derive an active scan that dynamically creates scanning probes based on the model and the previous responses from the server.
 We provide a comparison of five active TLS scanning and fingerprinting approaches in a local testbed and on toplist targets. 
 We conducted a measurement study over nine weeks to fingerprint C&C servers and analyzed popular and deprecated TLS parameter usage.
@@ -28,7 +28,7 @@ Similar to related work, the fingerprinting achieved a maximum precision of 99% 
 
 ## Data
 
-We provide an extended [ranking]({{ site.baseurl }}{% link pages/ranking.md %}) of TLS patameters as introduces in the paper.
+We provide an extended [ranking]({{ site.baseurl }}{% link pages/ranking.md %}) of TLS parameters as introduced in the paper.
 
 ## Referencing our Work
 
@@ -52,9 +52,9 @@ If you are referring to our work or use the collected data in your publication, 
 ## Experiment Setup and Scanner Software
 
 For the paper we have used the open-source [TUM Goscanner](https://github.com/tumi8/goscanner) for our Internet measurements. We extended it with the DissecTLS functionality and [JARM](https://github.com/salesforce/jarm) fingerprinting.
-The scammer is open-sourced in the official [repository](https://github.com/tumi8/goscanner).
+The scanner is open-sourced in the official [repository](https://github.com/tumi8/goscanner).
 
-The experiment setup used to compare the TLS scanner and fingerprinting tools can be found under: [experiment-setup](https://github.com/dissectls/experiment-setup)
+The experiment setup used to compare the TLS scanner and fingerprinting tools can be found under: [experiment-setup](https://github.com/dissectls/experiment-setup).
 
 
 ## Reproducibility
